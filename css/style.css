@@ -6,7 +6,7 @@
     padding: 0;
 }
 @media only screen and (max-width: 767px)  {
-    .main_header, .message_us_container, .education_container, .skill_container
+    .main_header, .education_container, .skill_container
        {flex-direction: column;}
     }
 @media only screen and (max-width: 767px) {
@@ -29,8 +29,15 @@
     .profile_container {
         flex-direction: column;
         align-items: center;
+        justify-content: space-around;
         margin: 15px;
+        row-gap: 15px;
     }
+@media only screen and (max-width: 1210px)  {
+    .message_us_container
+        {flex-direction: column;}
+        }
+
 }
 html, body {
     width: 100%;
@@ -191,26 +198,27 @@ nav{
     display: flex;
     margin-top: 20px;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     overflow: auto;
+    gap: 30px;
 }
 .porto_img img {
     width: 300px;
     height: 400px;
     border: 2px solid rgba(106,136,190,255);
+   
 }
 .profile_container {
     display: flex;
-    justify-content:flex-end;
-    margin-top: 20px;
-}
-.text_profile {
-    margin-left: 50px;
+    justify-content:space-evenly;
+    margin: 0px 15px;
+    align-items: center;
 }
 .profile_container img {
     border-radius: 50%;
     height: 250px;
     width: 250px;
+    margin: 15px 30px;
 }
 .text_profile {
     text-align: justify;
@@ -304,9 +312,9 @@ nav{
 }
 .message_us_container {
     display: flex;
-    justify-content: space-between;
+    justify-content:space-evenly;
     overflow: auto;
-
+    gap: 30px
 }
 .form_result {
     background: rgba(250,220,228,255);

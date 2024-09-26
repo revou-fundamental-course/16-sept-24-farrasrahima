@@ -15,6 +15,10 @@ const username_error = document.getElementById("username_error");
 const message_error = document.getElementById("message_error");
 const birthdate_error = document.getElementById("birthdate_error");
 
+function resetFunction () {
+    form.reset()
+}
+
 button.addEventListener("click", displayDetails);
 
 var row = 1;
