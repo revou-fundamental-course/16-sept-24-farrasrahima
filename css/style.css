@@ -305,6 +305,7 @@ nav{
 .message_us_container {
     display: flex;
     justify-content: space-between;
+    overflow: auto;
 
 }
 .form_result {
@@ -347,4 +348,9 @@ nav{
     font-weight: 400;
     background-color: rgba(201,217,239,255);
     text-align: end;
+ }
+ #table_result {
+    display: flex;
+    overflow: auto;
+    border: 0px;
  }
